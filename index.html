@@ -47,7 +47,7 @@
             <div class="navbar-nav gap-2">
               <a class="nav-link" href="#home">Home</a>
               <a class="nav-link" href="#gallery">Gallery</a>
-              <a class="nav-link" href="#testimonial">Testimonials</a>
+              <a class="nav-link" href="#testimonials">Testimonials</a>
               <a class="nav-link" href="#about">About</a>
               <a class="nav-link" href="#contact">Contact</a>
             </div>
@@ -55,15 +55,6 @@
         </div>
       </nav>
       <section class="hero-container" id="home">
-        <!-- <div class="hero-text">
-          <h1 class="fs-1">
-            Photography For Adventurous Souls & Rebels At Heart
-          </h1>
-          <div class="d-flex">
-            <p>LOREM IPSUM DOLOR SIT AMET</p>
-            <button class="btn btn-primary">Read More</button>
-          </div>
-        </div> -->
         <div
           id="carousel"
           class="carousel slide carousel-fade"
@@ -100,17 +91,18 @@
             <div
               class="carousel-item"
               style="background-image: url('./assets/header2.jpg')"
-            >
-              <!-- <div class="hero-text">
-                <h1 class="fs-1">
-                  Photography For Adventurous Souls & Rebels At Heart
-                </h1>
-                <div class="d-flex">
-                  <p>LOREM IPSUM DOLOR SIT AMET</p>
-                  <button class="btn btn-primary">Read More</button>
-                </div>
-              </div> -->
-            </div>
+            ></div>
+          </div>
+        </div>
+        <div class="hero-text-container">
+          <p class="hero-tag-line text-white">
+            Photography For <br />Adventurous Souls & <br />Rebels At Heart
+          </p>
+          <div
+            class="hero-footer lg-d-flex align-items-center justify-content-between w-100 p-3 text-white"
+          >
+            <button class="sm-pb-3">Read More</button>
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
           </div>
         </div>
       </section>
@@ -144,7 +136,7 @@
             />
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-md-none d-lg-block">
           <div class="mb-4">
             <img
               src="./assets/portfolio-2.jpg"
@@ -164,7 +156,7 @@
     <section class="testimonials-container" id="testimonials">
       <div class="row align-items-center">
         <!-- Left part: Details -->
-        <div class="col-lg-6 col-sm-12 mb-4">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
           <div class="text-content">
             <p class="h7 mb-5">TESTIMONIALS</p>
             <p>
@@ -234,7 +226,7 @@
     <section class="story-section" id="story">
       <div class="row align-items-center">
         <!-- Left part: Image -->
-        <div class="col-lg-6 col-sm-12 mb-4 story-img">
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-4 story-img">
           <img src="./assets/story-img.jpg" alt="story-img" />
         </div>
         <!-- Right part: Product details -->
@@ -330,7 +322,9 @@
                   alt="Image 1"
                 />
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 d-none d-md-block d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-2.jpg"
                   class="img-fluid"
@@ -360,7 +354,9 @@
                   alt="Image 4"
                 />
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 d-none d-md-block d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-5.jpg"
                   class="img-fluid"
@@ -388,7 +384,9 @@
                   alt="Image 7"
                 />
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 d-none d-md-block d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-8.jpg"
                   class="img-fluid"
@@ -421,7 +419,9 @@
                   alt="Image 11"
                 />
               </div>
-              <div class="col-lg-4 col-md-6">
+              <div
+                class="col-lg-4 col-md-6 d-none d-md-block d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-12.jpg"
                   class="img-fluid"
@@ -447,6 +447,7 @@
     </section>
 
     <!-- social media section -->
+
     <section class="section__container instagram__container">
       <h2 class="section__header">INSTAGRAM</h2>
       <div class="instagram__flex">
