@@ -36,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  const instagram = document.querySelector(".instagram__flex");
+
+  Array.from(instagram.children).forEach((item) => {
+    const duplicateNode = item.cloneNode(true);
+    duplicateNode.setAttribute("aria-hidden", true);
+    instagram.appendChild(duplicateNode);
+  });
+
   // Set up scroll event listener for the header
   window.addEventListener("scroll", function () {
     if (window.scrollY > 95) {

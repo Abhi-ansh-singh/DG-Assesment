@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Photography Portfolio</title>
+
+    <title>Photography portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -54,6 +55,15 @@
         </div>
       </nav>
       <section class="hero-container" id="home">
+        <!-- <div class="hero-text">
+          <h1 class="fs-1">
+            Photography For Adventurous Souls & Rebels At Heart
+          </h1>
+          <div class="d-flex">
+            <p>LOREM IPSUM DOLOR SIT AMET</p>
+            <button class="btn btn-primary">Read More</button>
+          </div>
+        </div> -->
         <div
           id="carousel"
           class="carousel slide carousel-fade"
@@ -86,22 +96,12 @@
             <div
               class="carousel-item active"
               style="background-image: url('./assets/header1.jpg')"
-            >
-              <div class="hero-text">
-                <h1 class="fs-1">
-                  Photography For Adventurous Souls & Rebels At Heart
-                </h1>
-                <div class="d-flex">
-                  <p>LOREM IPSUM DOLOR SIT AMET</p>
-                  <button class="btn btn-primary">Read More</button>
-                </div>
-              </div>
-            </div>
+            ></div>
             <div
               class="carousel-item"
               style="background-image: url('./assets/header2.jpg')"
             >
-              <div class="hero-text">
+              <!-- <div class="hero-text">
                 <h1 class="fs-1">
                   Photography For Adventurous Souls & Rebels At Heart
                 </h1>
@@ -109,7 +109,7 @@
                   <p>LOREM IPSUM DOLOR SIT AMET</p>
                   <button class="btn btn-primary">Read More</button>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -163,12 +163,12 @@
 
     <section class="testimonials-container" id="testimonials">
       <div class="row align-items-center">
-        <!-- Left part: Image -->
+        <!-- Left part: Details -->
         <div class="col-lg-6 col-sm-12 mb-4">
           <div class="text-content">
             <p class="h7 mb-5">TESTIMONIALS</p>
             <p>
-              Lorem ipsum dolor sit ametr et amet wisi suspendisse eu vestibulum
+              Lorem ipsum dolor sit ametr et amat wise suspenders eu vestibulum
               velt malesuada magna in ultricies ipsum, class vel platea sem
               nulla et. Sed donec. Ultricies in etiam elit diam sem
               sollicitudin, varius in duis. Turpis nunc nulla leo curae
@@ -176,7 +176,7 @@
             </p>
           </div>
         </div>
-        <!-- Right part: Product details -->
+        <!-- Right part: testimonials-carousel -->
         <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
           <div id="carousel_2" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel_2-controls">
@@ -230,9 +230,38 @@
       </div>
     </section>
 
+    <!-- Story Section -->
+    <section class="story-section" id="story">
+      <div class="row align-items-center">
+        <!-- Left part: Image -->
+        <div class="col-lg-6 col-sm-12 mb-4 story-img">
+          <img src="./assets/story-img.jpg" alt="story-img" />
+        </div>
+        <!-- Right part: Product details -->
+        <div class="col-lg-6 col-md-6 col-sm-12 mb-5">
+          <div class="text-content p-3">
+            <p class="h7 m-5 title">BEHIND THE CAMERA</p>
+            <p class="story-intro">
+              Welcome Friends, <br />
+              My Name is<br />
+              Vanessa
+            </p>
+            <p class="m-3">
+              This is a paragraph. Click edit and enter your own text. You can
+              make changes like making the text bold, underline or italic. This
+              is a great place for you to tell your clients more about your
+              story and to describe the type of photographer you are. You can
+              come back at any time to make more changes.
+            </p>
+            <button class="m-3">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Testimonial-2 Section -->
     <section class="testimonial-img p-20">
-      <p class="h6 text-white">Lorem ipsum dolor sit amet</p>
+      <p class="h6 text-white">Lorem ipsum dolor sit amat</p>
       <h1 class="h1">
         Do it Your Way.<br />
         Elope in Your <br />
@@ -243,7 +272,7 @@
     <!-- About Section -->
 
     <section class="about-container" id="about">
-      <h2 class="h2">Pacific Northwest or Anywhere Beyond</h2>
+      <h2 class="h2 title-bold">Pacific Northwest or Anywhere Beyond</h2>
       <p class="h6">
         This is a paragraph. Click edit and enter your own text. You can make
         changes like<br />
@@ -257,13 +286,14 @@
     </section>
 
     <!-- Image Slider  -->
+
     <section class="image-slider mb-5 pb-5">
       <div
         id="multiImageCarousel"
         class="carousel slide"
         data-bs-ride="carousel"
       >
-              <!-- Carousel Controls -->
+        <!-- Carousel Controls -->
         <div class="carousel-controls">
           <a
             class="carousel-control-prev"
@@ -290,6 +320,7 @@
 
         <!-- Carousel Inner -->
         <div class="carousel-inner">
+          <!-- 1st -->
           <div class="carousel-item active">
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12">
@@ -306,7 +337,9 @@
                   alt="Image 2"
                 />
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 d-none d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-3.jpg"
                   class="img-fluid"
@@ -315,9 +348,12 @@
               </div>
             </div>
           </div>
+          <!-- 2nd -->
           <div class="carousel-item">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 d-none d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-4.jpg"
                   class="img-fluid"
@@ -340,9 +376,12 @@
               </div>
             </div>
           </div>
+          <!-- 3rd -->
           <div class="carousel-item">
             <div class="row">
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div
+                class="col-lg-4 col-md-6 col-sm-12 d-none d-lg-block d-xl-block"
+              >
                 <img
                   src="./assets/category-7.jpg"
                   class="img-fluid"
@@ -365,7 +404,7 @@
               </div>
             </div>
           </div>
-
+          <!-- 4th -->
           <div class="carousel-item">
             <div class="row">
               <div class="col-lg-4 col-md-6 col-sm-12">
@@ -375,14 +414,14 @@
                   alt="Image 10"
                 />
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col-lg-4 col-md-6 d-none d-lg-block d-xl-block">
                 <img
                   src="./assets/category-11.jpg"
                   class="img-fluid"
                   alt="Image 11"
                 />
               </div>
-              <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="col-lg-4 col-md-6">
                 <img
                   src="./assets/category-12.jpg"
                   class="img-fluid"
@@ -404,8 +443,22 @@
           Go instead where there is no path and leave a trail"</em
         >
       </p>
-
       <p class="mt-5">RALPH WALDO EMERSON</p>
+    </section>
+
+    <!-- social media section -->
+    <section class="section__container instagram__container">
+      <h2 class="section__header">INSTAGRAM</h2>
+      <div class="instagram__flex">
+        <img src="./assets/image-1.jpg" alt="instagram" />
+        <img src="./assets/image-2.jpg" alt="instagram" />
+        <img src="./assets/image-3.jpg" alt="instagram" />
+        <img src="./assets/image-4.jpg" alt="instagram" />
+        <img src="./assets/image-5.jpg" alt="instagram" />
+        <img src="./assets/image-6.jpg" alt="instagram" />
+        <img src="./assets/image-7.jpg" alt="instagram" />
+        <img src="./assets/image-8.jpg" alt="instagram" />
+      </div>
     </section>
 
     <!-- Footer Section -->
